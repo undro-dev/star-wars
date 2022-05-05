@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link rel="icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div></div>
+        <div class="header-logo"></div>
+        <div class="header-registration"><span>Log in</span> // <span>sign up</span></div>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <div class="settings">
+          <div class="settings-sort">
+            <p>Sort by</p>
+            <select class="select">
+              <option>Episode number</option>
+              <option>Release date</option>
+            </select>
+            <span class="material-icons btn-sort top">north</span>
+            <span class="material-icons btn-sort bottom">south</span>
+            <div class="favourite"><button class="btn-favourite"><span class="material-icons btn-favourite-basket">star</span></button><div class="count"></div></div>
+          </div>
+          <div class="settings-view">
+            <span class="material-icons btn-view-page block">grid_view</span>
+            <span class="material-icons btn-view-page table">list</span>
+          </div>
+        </div>
+        <div class="wrapper-films">
+          <div class="loader-div">
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

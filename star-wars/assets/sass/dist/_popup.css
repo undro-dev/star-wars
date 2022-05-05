@@ -1,0 +1,37 @@
+.popup {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.6);
+  z-index: 0;
+}
+
+.popup.visible {
+  display: block;
+}
+
+.popup__body {
+  width: 900px;
+  height: 500px;
+  background: #fafafa;
+  border-radius: 9px;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-img {
+  width: 50%;
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+}

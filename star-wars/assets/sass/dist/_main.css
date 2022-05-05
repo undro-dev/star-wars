@@ -1,0 +1,6 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: 90vh;
+}
