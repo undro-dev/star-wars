@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: 10vh;
   .header-logo {
-    background-image: url("../img/Star_Wars_Yellow_Logo.svg.png");
+    background-image: url("../img/Star-Wars-Logo-Transparent-Background.png");
     width: 150px;
     height: 50px;
     background-size: 100% 100%;
@@ -20,8 +20,9 @@
     cursor: pointer;
     color: $light-grey;
     font-weight: 700;
-    font-size: 12px;
-    font-family: $georgia;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: "Koulen", cursive;
     transition: color 0.2s;
   }
   span:hover {

@@ -1,5 +1,6 @@
 import settings from "./settings.js";
 import { favorite } from "./favorite.js";
+import { choiceFilm } from "./choiceFilm.js";
 
 export async function renderFilms() {
   const WRAPPER_FILMS = document.querySelector(".wrapper-films");
@@ -14,8 +15,11 @@ export async function renderFilms() {
 
   function toCreateFilmCard({ title, episode_id, release_date }) {
     const FAVORITE_FILMS = localStorage.getItem("favorite-films") || [];
-    let film = document.createElement("div");
+    let film = document.createElement("a");
     film.classList.add("film");
+    film.href = "./modules.html";
+    // film.href = "#";
+    film.setAttribute("data-title", title);
 
     let filmContent = document.createElement("div");
     filmContent.classList.add("film-content");
@@ -97,6 +101,7 @@ export async function renderFilms() {
     sortFilms(films, settingsSite.sort, settingsSite.isTop);
     films.forEach((film) => toCreateFilmCard(film));
     favorite(".button-like");
+    choiceFilm(".film");
   }
 
   settings(render);

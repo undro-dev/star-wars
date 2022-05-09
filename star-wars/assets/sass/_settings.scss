@@ -1,7 +1,7 @@
 .settings {
   display: flex;
-  color: $light-grey;
   font-family: $georgia;
+  color: $light-grey;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -11,12 +11,21 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
+    p {
+      color: $light-grey;
+    }
+
     span {
+      color: rgba(98, 96, 96, 0.8);
       font-size: 16px;
       cursor: pointer;
+      transition: color 0.2s;
+    }
+    span:hover {
+      color: white;
     }
     span.active {
-      color: $yellow-active;
+      color: white;
     }
     .btn-favourite-basket {
       font-size: 30px;
@@ -27,11 +36,16 @@
     align-items: center;
     column-gap: 15px;
     span {
+      color: rgba(98, 96, 96, 0.8);
+      transition: color 0.2s;
       font-size: 24px;
       cursor: pointer;
     }
+    span:hover {
+      color: white;
+    }
     span.active {
-      color: $yellow-active;
+      color: white;
     }
   }
 }
@@ -39,7 +53,7 @@
   cursor: pointer;
   display: block;
   font-size: 12px;
-  font-family: $georgia;
+  font-family: "IBM Plex Sans Thai Looped";
   font-weight: 500;
   color: $light-grey;
   line-height: 1.3;

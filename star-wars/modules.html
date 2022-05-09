@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preload" />
   </head>
   <body>
+    <div class="container">
+      <header class="film-header"></header>
+      <main class="film-main">
+        <div class="left">
+          <div class="left-img"></div>
+          <div class="left-img-poster">
+            <div class="trailer"><span class="material-icons">play_circle</span>trailer</div>
+          </div>
+        </div>
+        <div class="centre">
+          <h1></h1>
+          <p class="centre-film-description"></p>
+          <div class="btn-control">
+            <a href="#" id="link-on-film" target="_blank"
+              ><div class="link-on-film"><span class="material-icons">play_circle</span>Watch movie</div></a
+            >
+            <button class="btn-like" title="add to favorites"><span class="material-icons">bookmark</span></button>
+          </div>
+          <h3>Actors</h3>
+          <div class="wrapper-actors"></div>
+          <button class="load-actors">Load more</button>
+        </div>
+        <div class="right"></div>
+      </main>
+    </div>
+    <div class="popup-video animate__animated">
+      <div class="video-wrapper">
+        <video width="400" height="240" controls>
+          <source type="video/mp4" />
+        </video>
+        <div class="popup-close video-close"></div>
+      </div>
+    </div>
+    <div class="loader">
+      <img src="./assets/img/preloaders/loader.gif" alt="loader" />
+    </div>
     <script type="module" src="./js/modules.js"></script>
   </body>
 </html>

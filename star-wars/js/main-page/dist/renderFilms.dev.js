@@ -9,6 +9,8 @@ var _settings = _interopRequireDefault(require("./settings.js"));
 
 var _favorite = require("./favorite.js");
 
+var _choiceFilm = require("./choiceFilm.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function renderFilms() {
@@ -58,8 +60,9 @@ function renderFilms() {
                       return toCreateFilmCard(film);
                     });
                     (0, _favorite.favorite)(".button-like");
+                    (0, _choiceFilm.choiceFilm)(".film");
 
-                  case 15:
+                  case 16:
                   case "end":
                     return _context2.stop();
                 }
@@ -92,8 +95,11 @@ function renderFilms() {
                 episode_id = _ref.episode_id,
                 release_date = _ref.release_date;
             var FAVORITE_FILMS = localStorage.getItem("favorite-films") || [];
-            var film = document.createElement("div");
+            var film = document.createElement("a");
             film.classList.add("film");
+            film.href = "./modules.html"; // film.href = "#";
+
+            film.setAttribute("data-title", title);
             var filmContent = document.createElement("div");
             filmContent.classList.add("film-content");
             var containerImg = document.createElement("div");
