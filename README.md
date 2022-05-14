@@ -2,7 +2,6 @@
 
 Deploy: https://undro-dev.github.io/star-wars/star-wars/main.html
 
-![Alt-текст](https://raw.githubusercontent.com/undro-dev/star-wars/star-wars/git-image.png?v=3&s=460 "Орк")
 
 ## Description:
 
@@ -11,7 +10,7 @@ This site has the following functionality:
 * watching movies and trailers online 
 * sorting and displaying movies 
 * adding to favorites 
-* a detailed description of each movie with information about the actors
+*a detailed description of each movie with information about the actors
 ## Key skills:
 - JavaScript
 - Modules in JavaScript
@@ -21,3 +20,4 @@ This site has the following functionality:
 - Local Storage
 - API
 - fetch, async/await
+
